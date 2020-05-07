@@ -1,0 +1,27 @@
+Was brauchts an Klassen für Squash:
+
+Main
+
+Fenster mit Beschriftung
+
+Spiel starten und beenden, Anzahl Bälle, Anzeige Spielstand
+
+"Schläger" mit Breite und Länge
+
+Ball Geschwindigkeit, Richtung und Position, Steuerung durch Mausklicks re oder li
+
+Ereignis Ball trifft auf Begrenzung mit Geschwindigkeit, Richtung, Lage
+- Ball ändert Richtung und Geschwindigkeit, Zähler(?)
+- Ball verlässt Spielfeld -> neuer Ball, Zähler(?), Spielende
+
+Ojekte:
+
+Spiel - nur 1 Spiel gleichzeitig möglich, Zähler initialisieren
+->es bekommt neues Fenster (Größe, absolute Position), Schläger (Länge, Breite, Position)
+und Ball (Seitenlänge), alles einfärben
+
+Spielstart durch Mausklick li, Ball startet irgendwo auf dem Schläger in zufälliger Richtung nach oben
+weitere Ereignisse sind
+-Mausklicks -> bewegen Schläger
+-Ballberührungen (Schläger oder Wände seitlich/oben) -> Zähler-(bei Wandberührung) und Richtungsänderung
+-Ball unterhalb Schlägerebene -> neuer Ball falls Ballzähler kleiner gleich 2 (insgesamt 3 Bälle pro Spiel) oder Spielende
